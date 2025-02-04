@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEKCJA BAJORKA</title>
+
+    <!-- Open Graph meta tags for social media -->
+    <meta property="og:title" content="SEKCJA BAJORKA">
+    <meta property="og:description" content="Największa sekcja Bajorka">
+    <meta property="og:image" content="/13.png">
+    <meta property="og:url" content="/bajorek.html">
+    <meta property="og:type" content="website">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 300px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sekcja Bajorka</h1>
+
+    <a href="index.html" class="button">Sekcja Poliszaka</a>
+
+    <div class="gallery">
+        <script>
+            for (let i = 1; i <= 19; i++) {
+                document.write(`<img src="b${i}.png" alt="Image b${i}">`);
+            }
+        </script>
+    </div>
+
+</body>
+</html>
