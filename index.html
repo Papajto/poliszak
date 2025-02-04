@@ -1,35 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Epic Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>poliszak.gay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 24px;
+            color: gray;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 300px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Epic Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section>
-            <h2>About This Website</h2>
-            <p>This is a simple example of an HTML website with CSS and JavaScript.</p>
-            <button onclick="showAlert()">Click Me</button>
-        </section>
-    </main>
+    <h1>poliszak.gay</h1>
+    <h2>Największe archiwum Mateusza Poliszaka</h2>
 
-    <footer>
-        <p>&copy; 2025 My Epic Website. All rights reserved.</p>
-    </footer>
+    <div class="gallery">
+        <!-- Images from 1.png to 15.png -->
+        <script>
+            for (let i = 1; i <= 15; i++) {
+                document.write(`<img src="${i}.png" alt="Image ${i}">`);
+            }
+        </script>
+    </div>
 
-    <script src="script.js"></script>
 </body>
 </html>
