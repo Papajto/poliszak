@@ -50,6 +50,7 @@
             height: auto;
             border-radius: 5px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
         }
     </style>
 </head>
@@ -63,7 +64,11 @@
     <div class="gallery">
         <script>
             for (let i = 1; i <= 19; i++) {
-                document.write(`<img src="${i}.png" alt="Image ${i}">`);
+                if (i === 8) {
+                    document.write(`<a href="bajorek.html"><img src="${i}.png" alt="Image ${i}"></a>`);
+                } else {
+                    document.write(`<img src="${i}.png" alt="Image ${i}">`);
+                }
             }
         </script>
     </div>
